@@ -5,7 +5,6 @@
 
     const contract = $page.params.contract;
     let stations_list = [];
-	let headers = ['Name', 'Address', 'Status'];
     onMount(async function () {
 		const response = await fetch(`http://127.0.0.1:5000/contracts/${contract}/stations`);
 		const data = await response.json();
@@ -19,5 +18,5 @@
 	>
 		LIST OF {contract.toUpperCase()}'S STATIONS
 	</p>
-	<StationsTable stations_list={stations_list} headers={headers}></StationsTable>
+	<StationsTable stations_list={stations_list}></StationsTable>
 </div>

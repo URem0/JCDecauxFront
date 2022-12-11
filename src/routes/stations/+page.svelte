@@ -3,7 +3,6 @@
 	import StationsTable from '$lib/StationsTable.svelte';
 
 	let stations_list = [];
-	let headers = ['Status', 'Name', 'Address'];
 
 	onMount(async function () {
 		const response = await fetch('http://127.0.0.1:5000/stations');
@@ -18,6 +17,5 @@
 	>
 		LIST OF ALL STATIONS
 	</p>
-
 	<StationsTable stations_list={stations_list}></StationsTable>
 </div>

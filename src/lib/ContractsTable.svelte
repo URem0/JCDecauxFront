@@ -1,5 +1,6 @@
 <script>
      export let contracts_list
+	 export let headers
 </script>
 
 
@@ -10,21 +11,21 @@
 				<table class="min-w-full text-sm text-left text-gray-500 dark:text-gray-400 shadow-md rounded-sm">
 					<thead class="text-xs text-gray-700 uppercase bg-gray-100">
 						<tr>
-							<th scope="col" class="py-2 px-4">Name</th>
-							<th scope="col" class="py-2 px-4">Country Code</th>
-							<th scope="col" class="py-2 px-4">Commercial Name</th>
+							{#each headers as header}
+								<th scope="col" class="py-2 px-4">{header}</th>
+							{/each}
 						</tr>
 					</thead>
 					<tbody>
 						{#each contracts_list as contract}
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-							<td class="py-2 px-4">
+							<td class="font-semibold py-2 px-4">
 								<a href="/contracts/{contract.name}">
 									{contract.name.toUpperCase()}
 								</a>
 							</td>
-							<td class="py-2 px-4">{contract.country_code}</td>
 							<td class="py-2 px-4">{contract.commercial_name}</td>
+							<td class="py-2 px-4">{contract.country_code}</td>
 						</tr>
 						{/each}
 					</tbody>

@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import ContractsTable from '$lib/ContractsTable.svelte';
 	let contracts_list = [];
-	let headers = ['Name', 'Country Code', 'Commercial Name']
+	let headers = ['Name', 'Commercial Name', 'Country Code' ];
 
 	onMount(async function () {
 		const response = await fetch('http://127.0.0.1:5000/contracts');

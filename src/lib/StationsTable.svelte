@@ -1,6 +1,6 @@
 <script>
     export let stations_list
-	let headers = ['Status', 'Name', 'Address', 'Bikes'];
+	let headers = ['Status', 'Name', 'Address', 'Bikes Available'];
 
     import Badge from "./Badge.svelte";
 </script>
@@ -34,7 +34,7 @@
                                     </a>
                                 </td>
                                 <td class="py-2 px-4">{station.address.toLowerCase()}</td>
-                                <td class="py-2 px-4">{station.available_bikes}/{station.bike_stands}</td>
+                                <td class="font-semibold py-2 px-4">{station.available_bikes}/{station.bike_stands}</td>
                             </tr>
                             {/each}
                         </tbody>
