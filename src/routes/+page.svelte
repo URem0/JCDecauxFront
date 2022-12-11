@@ -3,13 +3,13 @@
         {
             name: 'Stations',
             description:
-                'Generate CI/CD Jenkinsfile templates for your applications. Multiple languages and platforms are supported.',
+                'Access to the list of all JCDecaux stations',
             href: '/stations'
         },
         {
             name: 'Contracts',
             description:
-                'Access to the documentation of our different products and links to the documentation of our service providers.',
+                'Access to the list of all JCDecaux contracts',
             href: '/contracts'
         }
     ];
@@ -19,16 +19,13 @@
 
 <div class="py-16 sm:py-24">
     <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 class="text-base font-semibold uppercase  tracking-wider text-blue-500">
-			Welcome to JCDecaux dashboard
-        </h2>
         <p
             class="mt-2 text-3xl font-extrabold tracking-tight text-gray-800 dark:text-white sm:text-5xl"
         >
             WELCOME to JCDecaux dashboard
         </p>
         <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-            Set of tools to accelerate the time to market of the e-commerce applications
+           RTS Project
         </p>
         <div class="mt-12">
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-2">
