@@ -26,7 +26,7 @@
 	</p>
 
 	<div class="py-8 px-6 grid grid-cols-4 gap-2">
-		<NamespaceCard title="Name" class="text-center col-span-2">
+		<NamespaceCard title="Status" class="text-center col-span-2">
 			<Badge status={info.status}></Badge>
 		</NamespaceCard>
 		<NamespaceCard title="Address" class="text-center col-span-2">
@@ -36,7 +36,7 @@
 			{info.available_bikes}/{info.bike_stands}
 		</NamespaceCard>
 		<NamespaceCard title="See on Maps " class="text-center col-span-2">
-			<a href="https://www.google.fr/maps/place/{pos.lat}+{pos.lng}">
+			<a href="https://www.google.fr/maps/place/{pos.lat}+{pos.lng}" target="_blank" rel="noreferrer">
 				Open Here
 			</a>
 		</NamespaceCard>
